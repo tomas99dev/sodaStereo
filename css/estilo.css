@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "roboto";
+}
+
+
+
+html {
+
+  font-size: 1rem;
+  background-color: rgb(255 235 59 / 70%)
+}
+
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+
+}
+
+nav {
+  background-color: black;
+}
+
+header {
+  background-color: black;
+}
+
+
+header ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 15px;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
+
+
+
+.imagen {
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  margin-bottom: 10px;
+  border: solid 6px;
+  display: block;
+}
+
+.album {
+  width: 900px;
+  height: 500px;
+  margin: 10px;
+  border: solid 6px;
+}
+
+.foto {
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  text-align: center;
+  background-color: black;
+  margin-top: 50px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+footer p {
+  color: white;
+}
+
+.conteiner img {
+  width: 180px;
+  height: 180px;
+}
+
+.logos {
+  display: flex;
+}
+
+.conteiner div {
+  display: inline-block;
+}
+
+.conteiner div img {
+  border: solid black 2px;
+  margin: 10px;
+}
+
+.conteiner {
+  text-align: center;
+}
+
+/* Integrantes */
+
+.cerati {
+  width: 20%;
+  height: 200px;
+  object-fit: cover;
+}
+
+section p {
+  margin: 10px 0;
+}
+
+/* Historia */
+
+.historia p {
+  margin: 10px 10px;
+
+}
+
+
+
+/* Contacto */
+
+.formulario {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.contactos {
+  height: 100vh;
+
+}
+
+
+/* historia Grids */
+
+.total {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 60px 100px 2fr 200px;
+  grid-template-areas:
+    "nav nav nav nav"
+    "titulo titulo titulo titulo"
+    "article article article article"
+    "footer footer footer footer";
+}
+
+header {
+  grid-area: nav;
+}
+
+.tituloHistoria {
+  grid-area: titulo;
+}
+
+main {
+  grid-area: article;
+}
+
+footer {
+  grid-area: footer;
+  margin-top: 100px;
+
+}
+
+.mainHistoria {
+display: flex;
+  grid-area: article;
+
+}
+
+.banda {
+  height: 500px;
+  margin: 10px;
+}
+
+
+/* Tamaño celular de Historia */
+@media (max-width: 320px) {
+
+  .total {
+    grid-template-rows: none;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "nav"
+      "titulo"
+      "article"
+      "footer"
+
+  }
+
+  .banda {
+    display: none;
+  }
+
+  header ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+}
+
+
+/* Tamaño tablet de Historia */
+
+@media (max-width: 768px) {
+  .total {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 53px 100px 1fr 199px;
+    grid-template-areas:
+      "nav nav nav"
+      "titulo titulo titulo"
+      "article article article"
+      "footer footer footer"
+
+
+
+  }
+}
+
+
+
+/* index grids */
+
+
+.totalIndex {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 60px 100px 2fr 200px;
+  grid-template-areas: 
+  "nav nav nav nav"
+  "titulo titulo titulo titulo "
+  "article article article article "
+  "footer footer footer footer ";
+}
+
+.tituloIndex{
+  grid-area: titulo;
+}
+.articleIndex {
+  grid-area: article;
+}
+
+
+
+
+/* Tamaño celular index */
+
+ @media (max-width: 320px){
+ .totalIndex {
+   grid-template-columns: 1fr;
+   grid-template-rows: auto;
+   grid-template-areas: 
+   "nav"
+   "titulo"
+   "article"
+   "footer";
+ }
+
+ .imagen {
+  height: 100px;
+   width: 200px;
+ }
+}
+
+
+/* Tamaño tablet index */
+
+@media (max-width: 768px){
+  .totalIndex {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 53px 100px 1fr 199px;
+    grid-template-areas:
+      "nav nav nav"
+      "titulo titulo titulo"
+      "article article article"
+      "footer footer footer" ; 
+
+}
+}
