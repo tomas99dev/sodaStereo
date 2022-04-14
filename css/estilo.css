@@ -51,7 +51,6 @@ header a {
   height: 400px;
   margin: auto;
   margin-bottom: 10px;
-  border: solid 6px;
   display: block;
 }
 
@@ -230,7 +229,7 @@ display: flex;
 /* index grids */
 
 
-.totalIndex {
+/* .totalIndex {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 60px 100px 2fr 200px;
@@ -253,7 +252,7 @@ display: flex;
 
 /* Tamaño celular index */
 
- @media (max-width: 320px){
+ /* @media (max-width: 320px){
  .totalIndex {
    grid-template-columns: 1fr;
    grid-template-rows: auto;
@@ -268,12 +267,12 @@ display: flex;
   height: 100px;
    width: 200px;
  }
-}
+} */
 
 
 /* Tamaño tablet index */
 
-@media (max-width: 768px){
+/* @media (max-width: 768px){
   .totalIndex {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 53px 100px 1fr 199px;
@@ -284,4 +283,9 @@ display: flex;
       "footer footer footer" ; 
 
 }
+}  */
+
+body {
+ background-color: rgb(255 235 59 / 70%);
+
 }
